@@ -1,0 +1,26 @@
+.navbar-nav{
+    justify-content: flex-end;
+}
+.me-auto{
+    margin-right: 0 !important;
+}
+nav{
+    /* chanage height t0 20% */
+    height: 12vh;
+}
+.navbar-dark .navbar-brand{
+    font-size: 20px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+    font-size: 20px;
+}
+.container{
+    margin: 0 !important;
+}
+.jumbotron-container{
+    background: gainsboro;
+    width: 100%;
+    text-align: center;
+    margin-right: 0 !important;
+}

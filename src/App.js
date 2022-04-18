@@ -2,6 +2,7 @@
 
 import React from "react";
 import Unity, { UnityContext } from "react-unity-webgl";
+import Home from "./components/Home";
 
 const unityContext = new UnityContext({
   // importing files from public/buildUnity
@@ -13,7 +14,7 @@ const unityContext = new UnityContext({
 });
 
 function App() {
-  return <Unity unityContext={unityContext} />;
+  return <Home/>;
 }
 
 export default App;
