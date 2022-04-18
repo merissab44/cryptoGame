@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// Creating a react component to load a unity game using webgl
+
+import React from "react";
+import Unity, { UnityContext } from "react-unity-webgl";
+
+const unityContext = new UnityContext({
+  // importing files from public/buildUnity
+
+  loaderUrl: "buildUnity/First_Build_1.loader.js",
+  dataUrl: "buildUnity/First_Build_1.data",
+  frameworkUrl: "buildUnity/First_Build_1.framework.js",
+  codeUrl: "buildUnity/First_Build_1.wasm",
+});
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <Unity unityContext={unityContext} />;
 }
 
 export default App;
+
